@@ -103,7 +103,7 @@ export function HeroGeometric({
 
           <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
             <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              Crafting exceptional digital experiences through innovative design and cutting-edge technology.
+              Criando experiências digitais excepcionais por meio de design inovador e tecnologia de ponta.
             </p>
           </motion.div>
         </div>
@@ -113,4 +113,3 @@ export function HeroGeometric({
     </div>
   );
 }
-
