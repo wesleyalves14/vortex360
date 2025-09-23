@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Circle } from "lucide-react";
+import StatsGlass from "./StatsGlass";
 import { cn } from "@/lib/utils";
 
 function ElegantShape({
@@ -105,6 +106,7 @@ export function HeroGeometric({
             <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Criando experiências digitais excepcionais por meio de design inovador e tecnologia de ponta.
             </p>
+            <StatsGlass />
           </motion.div>
         </div>
       </div>
