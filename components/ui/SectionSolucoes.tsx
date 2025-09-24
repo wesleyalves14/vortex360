@@ -5,10 +5,10 @@ export default function SectionSolucoes() {
   return (
     <section
       id="solucoes"
-      className="relative overflow-hidden bg-[#030303] py-20 md:py-28"
+      className="relative overflow-hidden bg-transparent py-20 md:py-28"
     >
-      {/* Overlay de gradiente sutil como no Hero */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
+      {/* Overlay ajustado para não escurecer o fundo global */}
+      <div className="absolute inset-0 pointer-events-none bg-transparent -z-10" />
 
       <div className="relative z-10 container mx-auto px-6 md:px-8">
         {/* Badge */}
