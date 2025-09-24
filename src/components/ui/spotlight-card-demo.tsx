@@ -3,7 +3,7 @@ import { Rocket, BarChart3, Sparkles } from "lucide-react";
 
 export function DefaultGlowCardsDemo() {
   return (
-    <div className="min-h-[80vh] w-full flex items-center justify-center p-6">
+    <div className="w-full flex items-center justify-center px-6 py-10 sm:py-12 md:py-16 lg:py-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
         {/* Card 1 */}
         <GlowCard className="flex flex-col justify-between">
@@ -77,4 +77,3 @@ export function DefaultGlowCardsDemo() {
     </div>
   );
 }
-

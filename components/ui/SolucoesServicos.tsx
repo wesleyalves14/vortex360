@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { useState } from "react";
 import {
   Megaphone,
@@ -119,7 +119,7 @@ function Carousel({ images }: { images: string[] }) {
     setIndex((i) => (i - 1 + images.length) % images.length);
   };
 
-  const variants = {
+  const variants: Variants = {
     enter: (d: number) => ({ x: d > 0 ? 40 : -40, opacity: 0 }),
     center: { x: 0, opacity: 1 },
     exit: (d: number) => ({ x: d > 0 ? -40 : 40, opacity: 0 }),
@@ -181,14 +181,14 @@ function Carousel({ images }: { images: string[] }) {
 
 export default function SolucoesServicos() {
   return (
-    <div className="relative z-10 container mx-auto px-6 md:px-8 mt-12 md:mt-16 space-y-16">
+    <div className="relative z-10 container mx-auto px-6 md:px-8 space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20">
       {services.map((s, idx) => {
         const Icon = s.icon;
         const reversed = idx % 2 === 1;
         return (
           <div
             key={s.slug}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+            className="grid grid-cols-1 md:grid-cols-2 gap-y-8 sm:gap-y-10 md:gap-y-12 gap-x-6 md:gap-x-12 items-center"
           >
             {/* Imagem/Galeria */}
             <div className={reversed ? "md:order-2" : ""}>

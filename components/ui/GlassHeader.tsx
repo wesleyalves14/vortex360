@@ -33,7 +33,7 @@ export default function GlassHeader() {
 
             {/* Links */}
             <div className="hidden md:flex items-center gap-4 text-sm text-white/70">
-              <Link href="#servicos" className="hover:text-white/90 transition">Serviços</Link>
+              <Link href="/servicos" className="hover:text-white/90 transition">Serviços</Link>
               <Link href="#cases" className="hover:text-white/90 transition">Cases</Link>
               <Link href="#sobre" className="hover:text-white/90 transition">Sobre</Link>
             </div>
@@ -62,4 +62,3 @@ export default function GlassHeader() {
     </div>
   );
 }
-

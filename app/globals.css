@@ -6,3 +6,9 @@
 html, body {
   height: 100%;
 }
+
+@layer utilities {
+  .text-hero-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300;
+  }
+}
