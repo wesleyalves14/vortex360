@@ -43,12 +43,6 @@ const etapas = [
 export default function Processo360Section() {
   return (
     <section className="relative overflow-hidden py-16 md:py-20 lg:py-24">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-40 left-1/2 h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.22)_0%,rgba(56,189,248,0.12)_30%,transparent_70%)] blur-3xl" />
-        <div className="absolute bottom-[-220px] right-[12%] h-[520px] w-[520px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(14,165,233,0.18)_0%,transparent_65%)] blur-3xl" />
-        <div className="absolute bottom-[-200px] left-[-150px] h-[460px] w-[460px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.16)_0%,transparent_65%)] blur-3xl" />
-      </div>
-
       <div className="mx-auto w-full max-w-6xl px-6 md:px-10">
         <div className="flex flex-col space-y-12 md:space-y-16 lg:space-y-20">
           <div className="flex flex-col items-center text-center space-y-4 sm:space-y-6 md:space-y-8">

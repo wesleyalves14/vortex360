@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GlassHeader from "@/components/ui/GlassHeader";
 import ServicosPageContent from "@/components/sections/ServicosPageContent";
 
 export const metadata: Metadata = {
@@ -6,5 +7,10 @@ export const metadata: Metadata = {
 };
 
 export default function ServicosPage() {
-  return <ServicosPageContent />;
+  return (
+    <main className="relative flex flex-col">
+      <GlassHeader />
+      <ServicosPageContent />
+    </main>
+  );
 }

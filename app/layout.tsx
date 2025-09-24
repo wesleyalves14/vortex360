@@ -1,5 +1,5 @@
 import "./globals.css";
-import SiteBackground from "@/components/ui/site-background";
+import GeometricSiteBG from "@/components/ui/geometric-site-bg";
 
 export const metadata = {
   title: "VORTEX360",
@@ -9,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className="font-sans antialiased bg-transparent text-gray-900">
-        <SiteBackground />
-        {children}
+      <body className="relative bg-transparent text-white font-sans antialiased">
+        <GeometricSiteBG />
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );

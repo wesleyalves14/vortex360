@@ -210,11 +210,7 @@ export default function ServicosPageContent() {
   const active = tabContent[activeTab];
 
   return (
-    <main className="relative isolate overflow-hidden bg-[#05070B]">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-40 left-1/2 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(0,229,255,0.22)_0%,rgba(0,229,255,0.12)_25%,transparent_60%)] blur-3xl" />
-        <div className="absolute bottom-[-220px] right-[-150px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.18)_0%,transparent_60%)] blur-3xl" />
-      </div>
+    <main className="relative isolate overflow-hidden bg-transparent">
 
       <section className="py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
