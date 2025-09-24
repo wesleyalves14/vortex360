@@ -1,0 +1,50 @@
+<svg width="480" height="320" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradRed" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 60) rotate(45) scale(160 140)">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="gradCyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 260) rotate(-45) scale(200 160)">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.15" />
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#ef4444" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="480" height="320" rx="24" fill="#0b0b0c" stroke="#FFFFFF1A" filter="url(#shadow)" />
+  <rect x="0" y="0" width="480" height="320" rx="24" fill="url(#gradRed)" />
+  <rect x="0" y="0" width="480" height="320" rx="24" fill="url(#gradCyan)" />
+
+  <g transform="translate(48 56)">
+    <rect x="0" y="0" width="384" height="36" rx="18" fill="#111214" stroke="#FFFFFF16" />
+    <circle cx="24" cy="18" r="6" fill="#22d3ee" fill-opacity="0.4" />
+    <rect x="48" y="12" width="120" height="12" rx="6" fill="#ffffff33" />
+    <rect x="180" y="12" width="60" height="12" rx="6" fill="#ffffff1f" />
+  </g>
+
+  <g transform="translate(48 120)" stroke="#22d3ee33" stroke-width="1.5">
+    <path d="M0 72 C60 12 132 12 192 60 C252 108 324 108 384 48" fill="none" />
+    <circle cx="0" cy="72" r="4" fill="#22d3ee66" />
+    <circle cx="96" cy="24" r="5" fill="#22d3ee55" />
+    <circle cx="192" cy="72" r="5" fill="#22d3ee55" />
+    <circle cx="288" cy="96" r="6" fill="#22d3ee55" />
+    <circle cx="384" cy="48" r="6" fill="#22d3ee66" />
+  </g>
+
+  <g transform="translate(48 214)">
+    <rect x="0" y="0" width="116" height="64" rx="18" fill="#141519" stroke="#FFFFFF14" />
+    <rect x="16" y="18" width="84" height="10" rx="5" fill="#ffffff2d" />
+    <rect x="16" y="36" width="60" height="8" rx="4" fill="#ffffff1f" />
+
+    <rect x="134" y="0" width="116" height="64" rx="18" fill="#141519" stroke="#FFFFFF14" />
+    <rect x="150" y="18" width="84" height="10" rx="5" fill="#ffffff2d" />
+    <rect x="150" y="36" width="60" height="8" rx="4" fill="#ffffff1f" />
+
+    <rect x="268" y="0" width="116" height="64" rx="18" fill="#141519" stroke="#FFFFFF14" />
+    <rect x="284" y="18" width="84" height="10" rx="5" fill="#ffffff2d" />
+    <rect x="284" y="36" width="60" height="8" rx="4" fill="#ffffff1f" />
+  </g>
+
+  <text x="460" y="300" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" text-anchor="end" fill="#ffffff66">VORTEX360</text>
+</svg>
