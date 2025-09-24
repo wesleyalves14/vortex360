@@ -22,6 +22,10 @@ export function Marquee({
   const items = Array.from({ length: Math.max(1, repeat) }, () => children);
 
   const baseAnimName = vertical ? (reverse ? "marqueeYReverse" : "marqueeY") : (reverse ? "marqueeXReverse" : "marqueeX");
+  const directionClass = vertical ? "flex-col" : "flex-row";
+  const gapClass = vertical
+    ? "gap-y-2 sm:gap-y-3 md:gap-y-4 lg:gap-y-5"
+    : "gap-x-2 sm:gap-x-3 md:gap-x-4 lg:gap-x-5";
 
   return (
     <div className={cn("relative overflow-hidden", className)}>
@@ -33,8 +37,9 @@ export function Marquee({
       `}</style>
       <div
         className={cn(
-          "flex gap-4 will-change-transform",
-          vertical ? "flex-col" : "flex-row",
+          "flex will-change-transform",
+          directionClass,
+          gapClass,
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
         style={{
@@ -42,10 +47,9 @@ export function Marquee({
         }}
       >
         {items.map((chunk, idx) => (
-          <div key={idx} className={cn("flex gap-4", vertical ? "flex-col" : "flex-row")}>{chunk}</div>
+          <div key={idx} className={cn("flex", directionClass, gapClass)}>{chunk}</div>
         ))}
       </div>
     </div>
   );
 }
-

@@ -1,0 +1,51 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradRed" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140 120) rotate(35) scale(220 200)">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="gradCyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(620 380) rotate(-35) scale(260 220)">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="#ef4444" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="800" height="520" rx="24" fill="#0b0b0c" stroke="#FFFFFF1A" filter="url(#shadow)" />
+  <rect x="0" y="0" width="800" height="520" rx="24" fill="url(#gradRed)" />
+  <rect x="0" y="0" width="800" height="520" rx="24" fill="url(#gradCyan)" />
+
+  <g font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600">
+    <g transform="translate(150 160)">
+      <circle cx="0" cy="0" r="72" fill="#141519" stroke="#FFFFFF22" />
+      <text x="0" y="8" font-size="28" text-anchor="middle" fill="#ffffffbb">IG</text>
+    </g>
+    <g transform="translate(300 120)">
+      <circle cx="0" cy="0" r="60" fill="#16171c" stroke="#FFFFFF1F" />
+      <text x="0" y="8" font-size="24" text-anchor="middle" fill="#ffffffaa">Ads</text>
+    </g>
+    <g transform="translate(470 150)">
+      <circle cx="0" cy="0" r="68" fill="#14171c" stroke="#FFFFFF22" />
+      <text x="0" y="10" font-size="26" text-anchor="middle" fill="#ffffffbb">Meta</text>
+    </g>
+    <g transform="translate(640 200)">
+      <circle cx="0" cy="0" r="80" fill="#15181d" stroke="#FFFFFF1E" />
+      <text x="0" y="10" font-size="26" text-anchor="middle" fill="#ffffffbb">YouTube</text>
+    </g>
+    <g transform="translate(260 280)">
+      <circle cx="0" cy="0" r="84" fill="#15181d" stroke="#FFFFFF1E" />
+      <text x="0" y="10" font-size="28" text-anchor="middle" fill="#ffffffbb">TikTok</text>
+    </g>
+    <g transform="translate(460 320)">
+      <circle cx="0" cy="0" r="74" fill="#15181d" stroke="#FFFFFF1E" />
+      <text x="0" y="10" font-size="24" text-anchor="middle" fill="#ffffffbb">LinkedIn</text>
+    </g>
+    <g transform="translate(600 360)">
+      <circle cx="0" cy="0" r="60" fill="#15181d" stroke="#FFFFFF1E" />
+      <text x="0" y="8" font-size="24" text-anchor="middle" fill="#ffffffbb">Pinterest</text>
+    </g>
+  </g>
+
+  <text x="770" y="496" font-family="'Inter', 'Segoe UI', sans-serif" font-size="14" text-anchor="end" fill="#ffffff66">VORTEX360</text>
+</svg>

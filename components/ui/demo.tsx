@@ -5,9 +5,9 @@ import { cn } from '@/lib/utils';
 
 export default function Demo() {
   return (
-    <div className="relative w-full flex min-h-screen flex-col items-center justify-center">
-      <div className="flex w-full max-w-[1200px] px-6 md:px-12 flex-col items-end">
-        <WavePath className="mb-10" />
+    <section className="relative w-full py-10 sm:py-12 md:py-16 lg:py-20">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-end space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20 px-6 md:px-12">
+        <WavePath className="w-full" />
         <div className="flex w-full flex-col items-end">
           <div className="flex justify-end">
             <p className="mt-2 text-white/70 text-xs sm:text-sm md:text-base">Mundo da Arte</p>
@@ -18,6 +18,6 @@ export default function Demo() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

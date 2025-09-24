@@ -1,0 +1,33 @@
+<svg width="360" height="720" viewBox="0 0 360 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradRed" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(90 100) rotate(25) scale(160 160)">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="gradCyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 560) rotate(-25) scale(200 190)">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="#ef4444" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="360" height="720" rx="24" fill="#0b0b0c" stroke="#FFFFFF1A" filter="url(#shadow)" />
+  <rect x="0" y="0" width="360" height="720" rx="24" fill="url(#gradRed)" />
+  <rect x="0" y="0" width="360" height="720" rx="24" fill="url(#gradCyan)" />
+
+  <g transform="translate(56 48)">
+    <rect x="0" y="0" width="248" height="624" rx="48" fill="#111216" stroke="#FFFFFF1A" />
+    <rect x="80" y="16" width="88" height="12" rx="6" fill="#ffffff2a" />
+    <rect x="64" y="44" width="120" height="6" rx="3" fill="#ffffff20" />
+    <rect x="32" y="80" width="184" height="240" rx="24" fill="#15181d" stroke="#FFFFFF16" />
+    <rect x="32" y="344" width="160" height="14" rx="7" fill="#ffffff2a" />
+    <rect x="32" y="372" width="136" height="12" rx="6" fill="#ffffff1f" />
+    <rect x="32" y="400" width="144" height="12" rx="6" fill="#ffffff1f" />
+    <rect x="32" y="456" width="184" height="56" rx="18" fill="#14181d" stroke="#FFFFFF1A" />
+    <rect x="32" y="532" width="184" height="10" rx="5" fill="#ffffff24" />
+    <rect x="32" y="554" width="144" height="10" rx="5" fill="#ffffff24" />
+  </g>
+
+  <text x="332" y="692" font-family="'Inter', 'Segoe UI', sans-serif" font-size="14" text-anchor="end" fill="#ffffff66">VORTEX360</text>
+</svg>

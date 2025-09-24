@@ -41,15 +41,15 @@ function DepoimentoCard({ img, name, username, body, country }: (typeof depoimen
 
 export default function TestimonialsSection() {
   return (
-    <section id="parceiros" aria-label="A voz dos nossos parceiros" className="relative bg-transparent py-24">
+    <section id="parceiros" aria-label="A voz dos nossos parceiros" className="relative bg-transparent py-10 sm:py-12 md:py-16 lg:py-20">
       <div className="mx-auto w-full max-w-7xl px-6 md:px-10">
-        <h2 className="w-full text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-white/90 mb-10">
+        <h2 className="w-full text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-white/90 mb-4 md:mb-6 lg:mb-8">
           A voz dos nossos parceiros
         </h2>
 
-        <div className="relative border border-border/40 rounded-lg flex h-[28rem] w-full max-w-[1100px] overflow-hidden gap-1.5 [perspective:300px] bg-transparent">
+        <div className="relative border border-border/40 rounded-lg flex h-[28rem] w-full max-w-[1100px] overflow-hidden gap-x-2 sm:gap-x-3 lg:gap-x-4 [perspective:300px] bg-transparent">
           <div
-            className="flex flex-row items-center gap-4 will-change-transform"
+            className="flex flex-row items-center gap-x-3 sm:gap-x-4 lg:gap-x-5 will-change-transform"
             style={{
               transform:
                 "translateX(-100px) translateY(0px) translateZ(-100px) rotateX(20deg) rotateY(-10deg) rotateZ(20deg)",

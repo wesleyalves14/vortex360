@@ -1,7 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
+
+const appearVariants: Variants = {
+  hidden: (rotate: number = 0) => ({ opacity: 0, y: -150, rotate: rotate - 15 }),
+  visible: (rotate: number = 0) => ({ opacity: 1, y: 0, rotate }),
+};
 
 function ElegantShape({
   className,
@@ -20,12 +25,14 @@ function ElegantShape({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -150, rotate: rotate - 15 }}
-      animate={{ opacity: 1, y: 0, rotate }}
+      custom={rotate}
+      variants={appearVariants}
+      initial="hidden"
+      animate="visible"
       transition={{
         duration: 2.4,
         delay,
-        ease: [0.23, 0.86, 0.39, 0.96],
+        ease: [0.23, 0.86, 0.39, 0.96] as const,
         opacity: { duration: 1.2 },
       }}
       className={cn("absolute", className)}
