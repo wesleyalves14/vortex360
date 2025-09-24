@@ -12,6 +12,7 @@ import {
   Code2,
   CheckCircle2,
 } from "lucide-react";
+import { GALERIAS } from "../../src/data/servicos";
 
 type Service = {
   slug: string;
@@ -31,11 +32,7 @@ const services: Service[] = [
     bullets: [
       "Planejamento, configuração e gerenciamento de campanhas em Google Ads, Meta Ads, Bing, Pinterest e LinkedIn.",
     ],
-    images: [
-      "/servicos/trafego/1.jpg",
-      "/servicos/trafego/2.jpg",
-      "/servicos/trafego/3.jpg",
-    ],
+    images: GALERIAS.trafego,
     icon: Megaphone,
   },
   {
@@ -46,11 +43,7 @@ const services: Service[] = [
     bullets: [
       "Criação de textos persuasivos e conteúdos estratégicos focados em conversão.",
     ],
-    images: [
-      "/servicos/copywriting/1.jpg",
-      "/servicos/copywriting/2.jpg",
-      "/servicos/copywriting/3.jpg",
-    ],
+    images: GALERIAS.copy,
     icon: PenTool,
   },
   {
@@ -61,11 +54,7 @@ const services: Service[] = [
     bullets: [
       "Desenvolvimento de identidade e posicionamento de marca para fortalecer a presença no mercado.",
     ],
-    images: [
-      "/servicos/branding/1.jpg",
-      "/servicos/branding/2.jpg",
-      "/servicos/branding/3.jpg",
-    ],
+    images: GALERIAS.branding,
     icon: Gem,
   },
   {
@@ -76,11 +65,7 @@ const services: Service[] = [
     bullets: [
       "Estruturação e melhoria de jornadas de compra para maximizar resultados.",
     ],
-    images: [
-      "/servicos/funis/1.jpg",
-      "/servicos/funis/2.jpg",
-      "/servicos/funis/3.jpg",
-    ],
+    images: GALERIAS.funis,
     icon: FlaskConical,
   },
   {
@@ -91,11 +76,7 @@ const services: Service[] = [
     bullets: [
       "Desenvolvimento de estratégias de produção, divulgação e lançamento de produtos digitais.",
     ],
-    images: [
-      "/servicos/infoprodutos/1.jpg",
-      "/servicos/infoprodutos/2.jpg",
-      "/servicos/infoprodutos/3.jpg",
-    ],
+    images: GALERIAS.infoprodutos,
     icon: Rocket,
   },
   {
@@ -106,11 +87,7 @@ const services: Service[] = [
     bullets: [
       "Orientação especializada para empresas e empreendedores que buscam crescimento sustentável no digital.",
     ],
-    images: [
-      "/servicos/consultoria/1.jpg",
-      "/servicos/consultoria/2.jpg",
-      "/servicos/consultoria/3.jpg",
-    ],
+    images: GALERIAS.consultoria,
     icon: UserCheck,
   },
   {
@@ -124,7 +101,7 @@ const services: Service[] = [
       "Integrações via API (Correios, pagamentos, bancos de dados).",
       "Criação de micro SaaS para mobile e desktop.",
     ],
-    images: ["/servicos/dev/1.jpg", "/servicos/dev/2.jpg", "/servicos/dev/3.jpg"],
+    images: GALERIAS.dev,
     icon: Code2,
   },
 ];
@@ -246,4 +223,3 @@ export default function SolucoesServicos() {
     </div>
   );
 }
-
