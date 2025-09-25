@@ -4,6 +4,7 @@ import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import Demo from "@/components/ui/demo";
 import TestimonialsSection from "@/components/sections/testimonials";
 import Processo360Section from "@/components/sections/Processo360Section";
+import LeadCaptureSection from "@/components/sections/LeadCaptureSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Demo />
       <Processo360Section />
       <TestimonialsSection />
+      <LeadCaptureSection />
     </main>
   );
 }
