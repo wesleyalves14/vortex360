@@ -216,28 +216,16 @@ export default function ServicosPageContent() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center space-y-8 md:space-y-10">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold tracking-[0.35em] text-white/80">
-              Transforme o marketing da sua empresa em
-              <span className="ml-2 text-hero-gradient">APENAS 3 PASSOS</span>
+              <span className="ml-2 text-hero-gradient"></span>
             </span>
 
             <div className="space-y-6 md:space-y-8">
               <h1 className="relative z-10 container mx-auto max-w-6xl px-4 text-center font-extrabold leading-[1.05] tracking-tight text-balance overflow-visible">
-                <span className="block text-hero-gradient text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-                  vortex <span>É</span> MARKETING
-                  <span aria-hidden="true" className="align-middle ml-3 inline-flex items-center rounded-full px-2.5 py-1 ring-1 ring-white/10 bg-white/5 text-hero-gradient text-base sm:text-lg md:text-xl">
-                    360°
-                  </span>
-                  <span className="sr-only">360 graus</span>
-                </span>
+                <span className="block text-hero-gradient text-4xl sm:text-5xl md:text-6xl lg:text-7xl"></span>
 
-                <span className="mt-2 block text-hero-gradient text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                  MARKETING É VENDA
-                </span>
+                <span className="mt-2 block text-hero-gradient text-3xl sm:text-4xl md:text-5xl lg:text-6xl"></span>
               </h1>
               <div className="mx-auto h-px w-24 bg-white/15" />
-              <p className="mt-4 text-center text-zinc-300/90 text-sm sm:text-base md:text-lg">
-                desde 2015 gerando receita com soluçoes de marketing digital
-              </p>
             </div>
 
             <div className="w-full space-y-10 md:space-y-12">

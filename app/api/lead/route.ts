@@ -37,8 +37,9 @@ export async function POST(req: Request) {
     */
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error(err);
-    return NextResponse.json({ ok: false, error: err?.message ?? "Erro" }, { status: 400 });
+    const message = err instanceof Error ? err.message : "Erro desconhecido";
+    return NextResponse.json({ ok: false, error: message }, { status: 400 });
   }
 }
