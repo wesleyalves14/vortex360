@@ -63,17 +63,17 @@ export default function Processo360Section() {
                 key={titulo}
                 className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition duration-300 ease-out hover:-translate-y-1 hover:border-white/20 hover:bg-white/10"
               >
-              <div className="flex flex-col gap-4">
-                <div className="inline-flex size-12 items-center justify-center rounded-xl bg-white/10 ring-1 ring-cyan-500/30">
-                  <Icon className="h-6 w-6 text-cyan-300" aria-hidden="true" />
-                </div>
-                <div className="space-y-2 text-left">
-                  <h3 className="text-lg font-semibold text-white">{titulo}</h3>
-                  <p className="text-sm text-zinc-300/90">{descricao}</p>
+                <div className="flex flex-col items-center sm:items-start gap-4 text-center sm:text-left">
+                  <div className="inline-flex size-12 items-center justify-center rounded-xl bg-white/10 ring-1 ring-cyan-500/30">
+                    <Icon className="h-6 w-6 text-[#009739]" aria-hidden="true" />
+                  </div>
+                  <div className="space-y-2 text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-white">{titulo}</h3>
+                    <p className="text-sm text-zinc-300/90">{descricao}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
           </div>
         </div>
       </div>

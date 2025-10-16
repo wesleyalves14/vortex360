@@ -51,14 +51,14 @@ export function Services() {
         <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 md:grid-cols-3">
           {services.map(({ icon: Icon, title, text }) => (
             <ServiceGlowCard key={title} className="group">
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col items-center justify-center gap-3 text-center sm:flex-row sm:items-center sm:justify-start sm:text-left">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0B111A] ring-1 ring-white/10">
                   <Icon className="h-5 w-5 text-[#00E5FF]" />
                 </div>
-                <h3 className="text-base font-semibold text-white">{title}</h3>
+                <h3 className="text-base font-semibold text-white text-center sm:text-left">{title}</h3>
               </div>
-              <p className="mt-3 text-sm text-white/70">{text}</p>
-              <div className="mt-5">
+              <p className="mt-3 text-sm text-white/70 text-center sm:text-left">{text}</p>
+              <div className="mt-5 text-center sm:text-left">
                 <Link href="#" className="inline-block">
                   <Button variant="outlineGlow">Saiba Mais</Button>
                 </Link>

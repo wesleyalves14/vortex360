@@ -247,7 +247,7 @@ export default function ServicosPageContent() {
                           : "border-b-2 border-transparent text-white/60 hover:text-white/80"
                       }`}
                     >
-                      <Icon className={`h-4 w-4 ${isActive ? "text-cyan-300" : "text-white/50 group-hover:text-white/70"}`} aria-hidden="true" />
+                      <Icon className={`h-4 w-4 ${isActive ? "text-[#009739]" : "text-white/50 group-hover:text-white/70"}`} aria-hidden="true" />
                       <span>{label}</span>
                     </button>
                   );
@@ -262,15 +262,15 @@ export default function ServicosPageContent() {
                       : "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start"
                   }
                 >
-                  <div className="max-w-xl">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">{active.title}</h3>
+                  <div className="max-w-xl mx-auto flex flex-col items-center text-center sm:items-start sm:text-left">
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center sm:text-left">{active.title}</h3>
                     {active.description && (
-                      <p className="mt-3 text-base md:text-lg text-zinc-300/90">{active.description}</p>
+                      <p className="mt-3 text-base md:text-lg text-zinc-300/90 text-center sm:text-left">{active.description}</p>
                     )}
-                    <ul className="mt-6 space-y-3 text-sm md:text-base text-zinc-200">
+                    <ul className="mt-6 space-y-3 text-sm md:text-base text-zinc-200 w-full text-center sm:text-left">
                       {active.bullets.map((item) => (
-                        <li key={item} className="flex gap-2">
-                          <span aria-hidden="true" className="mt-1 text-cyan-300">✓</span>
+                        <li key={item} className="flex items-center justify-center sm:items-start sm:justify-start gap-2 text-left">
+                          <span aria-hidden="true" className="mt-1 text-[#009739]">✓</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -310,14 +310,14 @@ export default function ServicosPageContent() {
               description: "Operamos campanhas em Meta Ads com acesso antecipado a recursos, suporte dedicado e creative shop.",
               badge: "META PARTNER",
             }].map(({ title, description, badge }) => (
-              <div key={title} className="flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-sm">
-                <div className="flex items-center gap-4">
+              <div key={title} className="flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-sm text-center sm:text-left">
+                <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center sm:justify-start">
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-xs font-semibold text-white/70">
                     {badge}
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">{title}</h3>
-                    <p className="text-sm text-zinc-300/90">{description}</p>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-xl font-semibold text-white text-center sm:text-left">{title}</h3>
+                    <p className="text-sm text-zinc-300/90 text-center sm:text-left">{description}</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-3 text-sm text-zinc-300/90">

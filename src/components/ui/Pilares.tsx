@@ -12,25 +12,25 @@ type Pillar = {
 
 const pilares: Pillar[] = [
   {
-    icon: <Lightbulb className="size-6 text-cyan-400" />,
+  icon: <Lightbulb className="size-6 text-[#009739]" />,
     title: "Estratégia",
     text: "Planejamento orientado a dados e objetivos.",
     color: "blue",
   },
   {
-    icon: <Cog className="size-6 text-cyan-400" />,
+  icon: <Cog className="size-6 text-[#009739]" />,
     title: "Tecnologia",
     text: "Stack moderna e integrações inteligentes.",
     color: "purple",
   },
   {
-    icon: <Palette className="size-6 text-cyan-400" />,
+  icon: <Palette className="size-6 text-[#009739]" />,
     title: "Criatividade",
     text: "Criação que conecta e converte.",
     color: "green",
   },
   {
-    icon: <Rocket className="size-6 text-cyan-400" />,
+  icon: <Rocket className="size-6 text-[#009739]" />,
     title: "Execução",
     text: "Entrega ágil com melhoria contínua.",
     color: "orange",
@@ -63,4 +63,3 @@ export default function Pilares() {
     </section>
   );
 }
-

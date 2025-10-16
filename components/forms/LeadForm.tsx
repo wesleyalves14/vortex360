@@ -133,7 +133,7 @@ export default function LeadForm() {
 
             <button
               disabled={status === 'sending'}
-              className="btn-primary w-full rounded-xl font-semibold py-3 transition disabled:opacity-60"
+              className="w-full rounded-xl font-semibold py-3 bg-green-600 text-white shadow-lg shadow-green-500/30 transition-colors transition-transform duration-200 hover:bg-green-500 hover:scale-105 disabled:opacity-60 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-transparent"
             >
               {status === 'sending' ? 'Enviando...' : 'Receber mais informações'}
             </button>

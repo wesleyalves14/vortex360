@@ -58,9 +58,6 @@ export default function GeometricSiteBG() {
       {/* base */}
       <div className="absolute inset-0 bg-[#030303]" />
 
-      {/* véu leve em diagonal */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
-
       {/* shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
@@ -104,9 +101,6 @@ export default function GeometricSiteBG() {
           className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
         />
       </div>
-
-      {/* gradiente sutil superior/inferior — mantém a leitura em páginas longas */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80" />
     </div>
   );
 }

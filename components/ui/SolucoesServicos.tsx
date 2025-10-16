@@ -196,19 +196,19 @@ export default function SolucoesServicos() {
             </div>
 
             {/* Texto */}
-            <div className={reversed ? "md:order-1" : ""}>
-              <div className="mb-4">
-                <Icon className="h-7 w-7 text-cyan-300" />
+            <div className={`${reversed ? "md:order-1" : ""} flex flex-col items-center sm:items-start text-center sm:text-left`}>
+              <div className="mb-4 flex items-center justify-center sm:justify-start">
+                <Icon className="h-7 w-7 text-[#009739]" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-semibold text-white">
+              <h3 className="text-2xl md:text-3xl font-semibold text-white text-center sm:text-left">
                 {s.title}
               </h3>
-              <p className="mt-3 text-white/75">{s.description}</p>
+              <p className="mt-3 text-white/75 text-center sm:text-left">{s.description}</p>
 
-              <ul className="mt-5 space-y-2.5">
+              <ul className="mt-5 space-y-2.5 w-full text-center sm:text-left">
                 {s.bullets.map((b, i) => (
-                  <li key={i} className="flex gap-2 text-white/85">
-                    <CheckCircle2 className="h-5 w-5 text-cyan-300 shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-center justify-center sm:items-start sm:justify-start gap-2 text-white/85 text-left">
+                    <CheckCircle2 className="h-5 w-5 text-[#009739] shrink-0 mt-0.5" />
                     <span>{b}</span>
                   </li>
                 ))}
