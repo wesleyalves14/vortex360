@@ -38,7 +38,7 @@ export function Hero() {
 
         {/* Metrics grid */}
         <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-4 sm:mt-14 sm:grid-cols-3">
-          <MetricCard value="+348" label="clientes atendidos" />
+          <MetricCard value="+349" label="clientes atendidos" />
           <MetricCard value="97%" label="de satisfação" />
           <MetricCard value="65%" label="de crescimento médio" />
         </div>

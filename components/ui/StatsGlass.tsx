@@ -28,7 +28,7 @@ function AnimatedNumber({ value, suffix = "" }: { value: number; suffix?: string
 type Stat = { value: number; suffix?: string; label: string };
 
 const stats: Stat[] = [
-  { value: 348, label: "Projetos Concluídos" },
+  { value: 349, label: "Projetos Concluídos" },
   { value: 250, suffix: "%", label: "ROI Médio (%)" },
   { value: 45, suffix: "%", label: "CPL Reduzido (%)" },
 ];
